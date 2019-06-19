@@ -9,4 +9,13 @@ object Recursion extends App {
   }
 
  println( factorial(5000,1))
+
+  def printWordNTime(word: String,count: Int, accumulator: String): String = {
+    if(count<=0){
+      return accumulator
+    }
+    printWordNTime(word,count-1,word + "\n" + accumulator)
+  }
+
+  println(printWordNTime("hey hey",10,""))
 }
