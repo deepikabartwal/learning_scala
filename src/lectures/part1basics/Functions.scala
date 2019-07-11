@@ -1,5 +1,7 @@
 package lectures.part1basics
 
+import scala.annotation.tailrec
+
 object Functions extends App {
   def sayHelloTo(name: String): String = {
     "Hello " + name
@@ -20,7 +22,6 @@ object Functions extends App {
   def giveIntro(name: String, age: Int): String = {
     s"My name is $name and I am $age years old"
   }
-
 
   def calculateFactorial(number: Int): Int = {
     if (number <= 0) {
